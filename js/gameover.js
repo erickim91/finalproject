@@ -15,7 +15,7 @@ var Game_Over = {
         game.add.text(525, 398, score.toString(), { font: "bold 20px sans-serif", fill: "#fff", align: "center" });
 
     },
-
+ 
     startGame: function () {
 
         // Change the state back to Game.
