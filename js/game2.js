@@ -53,7 +53,9 @@ var Heli_Game = {
       game.physics.arcade.collide(player, walls);
       game.physics.arcade.collide(player, wall);
 
-      // midWallTimer = game.time.events.loop(1800, this.addCenterWall, this);
+      game.time.events.loop(1800, this.addCenterWall, this);
+
+      scoreText = game.add.text(32, 550, "score: 0", { font: "20px Arial", align: "left", fill: "#ffffff" });
 
     },
 
@@ -124,29 +126,30 @@ game.physics.arcade.overlap(player, walls, this.gameOver, null, this);
 
     gameOver: function() {
         game.state.start('Game_Over');
-    }
+    },
 
 
-    // addCenterWall: function() {
-    //
-    //   var centerWall = Math.floor(Math.random() * 28) + 1;
-    //
-    //   // i < total number of blocks
-    //   for (i = 0; i < 30; i++) {
-    //     if (i = centerWall) {
-    //
-    //       var midWall = midWalls.getFirstDead();
-    //
-    //       midWall.reset(980, i * 20);
-    //
-    //       midWall.body.velocity.x = -200;
-    //
-    //       midWall.checkWorldBounds = true;
-    //       midWall.outOfBoundsKill = true;
-    //
-    //     }
-    //   }
+    addCenterWall: function() {
+
+      var centerWall = Math.floor(Math.random() * 28) + 1;
+
+      // i < total number of blocks
+      for (i = 0; i < 30; i++) {
+        if (i = !centerWall) {
+
+          var wall = Walls.getFirstDead();
+
+          wall.reset(600, i * 20);
+
+          wall.body.velocity.x = -200;
+
+          wall.checkWorldBounds = true;
+          wall.outOfBoundsKill = true;
+
+        }
+      }
     //
     // }
 
-};
+}
+}
