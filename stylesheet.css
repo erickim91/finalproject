@@ -1,0 +1,13 @@
+body {
+    background-image: url("http://i.imgur.com/NHCgfQB.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #000000;
+}
+
+div {
+   position: absolute;
+   top: 402px;
+   left: 525px;
+}
