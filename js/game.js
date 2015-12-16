@@ -37,8 +37,8 @@ var Snake_Game = {
         this.generateFace();
 
 
-        textStyle_Key = { font: "bold 15px sans-serif", fill: "#fff", align: "center" };
-        textStyle_Value = { font: "bold 18px sans-serif", fill: "#fff", align: "center" };
+        textStyle_Key = { font: "bold 15px sans-serif", fill: '#306230', align: "center" };
+        textStyle_Value = { font: "bold 18px sans-serif", fill: '#306230', align: "center" };
 
 
         game.add.text(30, 20, "SCORE", textStyle_Key);

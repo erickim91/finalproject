@@ -11,11 +11,11 @@ var Game_Over = {
         this.add.button(0, 0, 'gameover', this.startGame, this);
 
         // Add text with information about the score from last game.
-        game.add.text(410, 400, "LAST SCORE", { font: "bold 16px sans-serif", fill: "#fff", align: "center"});
-        game.add.text(525, 398, score.toString(), { font: "bold 20px sans-serif", fill: "#fff", align: "center" });
+        game.add.text(410, 400, "LAST SCORE", { font: "bold 16px sans-serif", fill: '#306230', align: "center"});
+        game.add.text(525, 398, score.toString(), { font: "bold 20px sans-serif", fill: '#306230', align: "center" });
 
     },
- 
+
     startGame: function () {
 
         // Change the state back to Game.

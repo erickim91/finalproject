@@ -4,8 +4,8 @@ var ballOnPaddle = true;
 var lives = 3;
 var score;
 
-var defaultTextOptions = { font: "20px Arial", align: "left", fill: "#ffffff" };
-var boldTextOptions = { font: "40px Arial", fill: "#ffffff", align: "center" };
+var defaultTextOptions = { font: "20px Arial", align: "left", fill: '#306230' };
+var boldTextOptions = { font: "40px Arial", fill: '#306230', align: "center" };
 
 var Dx_Game = {
 
@@ -14,9 +14,6 @@ var Dx_Game = {
        game.load.image("block0", "/assets/block0.png");
        game.load.image("block1", "/assets/block1.png");
        game.load.image("block2", "/assets/block2.png");
-       game.load.image("block3", "/assets/block3.png");
-       game.load.image("block4", "/assets/block4.png");
-       game.load.image("block5", "/assets/block5.png");
        game.load.image("paddle", "/assets/newpaddle.png");
        game.load.image("ball", "/assets/ball.png");
     },
@@ -36,7 +33,7 @@ var Dx_Game = {
 
        for (i = 0; i < 5; i++) {
          for (j = 0; j < 15; j++) {
-           var randomblockNumber = Math.floor(Math.random() * 6);
+           var randomblockNumber = Math.floor(Math.random() * 3);
            var block = blocks.create(120 + (j * 52), 100 + (i * 52), "block" + randomblockNumber);
            block.body.bounce.set(1);
            block.body.immovable = true;
@@ -61,7 +58,7 @@ var Dx_Game = {
 
        scoreText = game.add.text(32, 550, "score: 0", defaultTextOptions);
        livesText = game.add.text(900, 550, "lives: 3", defaultTextOptions);
-       introText = game.add.text(game.world.centerX, 400, "CLICK TO LAUNCH BALL", { font: "bold 50px sans-serif", fill: "#fff", align: "center"});
+       introText = game.add.text(game.world.centerX, 400, "CLICK TO LAUNCH BALL", { font: "bold 50px sans-serif", fill: '#306230', align: "center"});
        introText.anchor.setTo(0.5, 0.5);
        game.input.onDown.add(helpers.release, this);
   },

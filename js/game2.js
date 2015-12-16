@@ -54,7 +54,7 @@ var Heli_Game = {
 
       game.time.events.loop(1800, this.addCenterWall, this);
 
-      scoreText = game.add.text(32, 550, "score: 0", { font: "20px Arial", align: "left", fill: "#ffffff" });
+      scoreText = game.add.text(32, 550, "score: 0", { font: "20px Arial", align: "left", fill: '#306230' });
 
     },
 
