@@ -5,13 +5,12 @@ var Menu = {
       game.load.image('playSnake', './assets/snakestart.png');
       game.load.image('playHeli', './assets/helicopterstart.png');
       game.load.image('playBreakout', './assets/breakoutstart.png');
-      game.load.audio('jayZ', '/assets/HippityHoppity.mp3');
 
     },
 
     create: function () {
 
-      game.stage.backgroundColor = '#061f27';
+      game.stage.backgroundColor = '#9BBC0F';
 
       // music = game.add.audio("jayZ");
       // music.stop();

@@ -11,13 +11,12 @@ var Heli_Game = {
       game.load.image('player', '/assets/helicoptersprite.png');
       game.load.image('cavewall', '/assets/longwall.png');
       game.load.image('wallblock', '/assets/wallblock.png');
-      game.load.audio('jayZ', '/assets/HippityHoppity.mp3');
 
     },
 
     create: function() {
 
-      game.stage.backgroundColor = '#061f27';
+      game.stage.backgroundColor = '#9BBC0F';
 
       score = 0;
 
@@ -55,7 +54,7 @@ var Heli_Game = {
 
       game.time.events.loop(1800, this.addCenterWall, this);
 
-      scoreText = game.add.text(32, 550, "score: 0", { font: "20px Arial", align: "left", fill: "#ffffff" });
+      scoreText = game.add.text(32, 550, "score: 0", { font: "20px Arial", align: "left", fill: '#306230' });
 
     },
 
