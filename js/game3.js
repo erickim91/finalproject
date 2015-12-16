@@ -24,7 +24,7 @@ var Dx_Game = {
   create: function() {
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
-    game.stage.backgroundColor = '#061f27';
+    game.stage.backgroundColor = '#9BBC0F';
 
     score = 0;
 

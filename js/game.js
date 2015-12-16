@@ -6,13 +6,12 @@ var Snake_Game = {
 
         game.load.image('snake', './assets/snakeBody.png');
         game.load.image('face', './assets/face.png');
-        game.load.audio('jayZ', '/assets/HippityHoppity.mp3');
     },
 
     create: function() {
 
 
-        game.stage.backgroundColor = '#061f27';
+        game.stage.backgroundColor = '#9BBC0F';
 
 
         snake = [];
@@ -27,8 +26,6 @@ var Snake_Game = {
 
         // Set up a Phaser controller for keyboard input.
         cursors = game.input.keyboard.createCursorKeys();
-
-        game.stage.backgroundColor = '#061f27';
 
         // Generate the initial snake stack
         for (i = 0; i < 16; i++) {
